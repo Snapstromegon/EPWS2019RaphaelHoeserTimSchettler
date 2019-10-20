@@ -15,3 +15,6 @@ Es soll ein Tool entwickelt werden, welches mit einem Gamificationansatz anhand 
 ## Wirtschaftliche und Gesellschaftliche Relevanz
 
 Unternehmen können durch den Einsatz dieses Projekts die Gefahren durch Phishingangriffe reduzieren und die Gesellschaft insgesamt wird weniger anfällig für solche Angriffe, was diese wiederum weniger lukrativ gestaltet.
+
+## Domänenmodell
+<img src="./Allgemeine Artefakte/DomainModel.svg">
