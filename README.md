@@ -18,3 +18,4 @@ Unternehmen können durch den Einsatz dieses Projekts die Gefahren durch Phishin
 
 ## Domänenmodell
 <img src="./Allgemeine Artefakte/DomainModel.svg">
+<img src="./Allgemeine Artefakte/Domänenmodell EPWS2019.svg">
