@@ -4,7 +4,7 @@ import config from './config.js';
 import db from './models/index.cjs';
 import Overview from './Overview/index.js';
 
-// const mailAttacker = new MailAttacker(config.Attacker.Mail);
+const mailAttacker = new MailAttacker(config.Attacker.Mail);
 const webAdAttacker = new WebAdAttacker({port:80});
 
 // mailAttacker
