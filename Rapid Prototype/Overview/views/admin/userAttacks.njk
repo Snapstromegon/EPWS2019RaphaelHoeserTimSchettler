@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Attacken für #{{user.id}} {{user.firstName}} {{user.lastName}} ({{user.email}})</h1>
+  <a href="http://127.0.0.1/attack/ad/{{user.id}}">Attacke generieren</a>
+  <table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Attacker</th>
+      <th>Difficulty</th>
+      <th>Attacked</th>
+      <th>Responded</th>
+      <th>Response Quality</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%for attack in user.Attacks %}
+  <tr>
+    <td>{{attack.id}}</td>
+    <td>{{attack.attacker}}</td>
+    <td>{{attack.difficulty}}</td>
+    <td>{{attack.attacked}}</td>
+    <td>{{attack.responded}}</td>
+    <td>{{attack.responseQuality}}</td>
+    </tr>
+  {%endfor%}
+  </tbody>
+  </table>
+</body>
+</html>

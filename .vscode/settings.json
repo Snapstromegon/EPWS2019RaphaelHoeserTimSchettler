@@ -1,0 +1,21 @@
+{
+  "sqltools.connections": [
+    {
+      "askForPassword": false,
+      "connectionTimeout": 30,
+      "database": "dm2019_ts_shop",
+      "dialect": "MySQL",
+      "name": "Local Docker dm2019_ts_shop",
+      "password": "password",
+      "port": 3306,
+      "server": "127.0.0.1",
+      "username": "odm2019"
+    },
+    {
+      "database": "${workspaceFolder}\\Rapid Prototype/database.sqlite",
+      "dialect": "SQLite",
+      "name": "Local Rapid EP DB"
+    }
+  ],
+  "sqltools.useNodeRuntime": true
+}

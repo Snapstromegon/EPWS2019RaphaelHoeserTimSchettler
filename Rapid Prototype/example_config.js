@@ -1,4 +1,4 @@
-{
+export default {
   "Attacker": {
     "Mail": {
       "host": "",

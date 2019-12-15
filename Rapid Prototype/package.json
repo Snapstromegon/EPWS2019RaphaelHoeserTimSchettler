@@ -4,15 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "resetDB": "powershell -c rm ./database.sqlite && npx sequelize db:migrate && npx sequelize db:seed:all"
   },
   "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "argon2": "^0.25.1",
+    "express": "^4.17.1",
     "imap-simple": "^4.3.0",
     "nodemailer": "^6.3.1",
+    "nunjucks": "^3.2.0",
+    "sequelize": "^5.21.3",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.1",
     "uuid": "^3.3.3"
   }
 }
