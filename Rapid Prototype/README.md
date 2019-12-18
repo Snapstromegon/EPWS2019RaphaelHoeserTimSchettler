@@ -10,6 +10,12 @@ Installiere nodejs current von [https://nodejs.org/en/](https://nodejs.org/en/) 
 npm install
 ```
 
+## Config anpassen
+
+Folgende Dateien entsprechend anpassen (normal von der example_config.js übernehmen)
+- ./config.js
+- ./config/config.js
+
 ## Datenbank initialisieren
 
 ```
