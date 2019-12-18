@@ -6,16 +6,19 @@ const router = express.Router();
 export default router;
 
 router.get('/', async (req,res,next) => {
+  // list all users
   res.render('admin/users.njk', {users: await User.findAll()});
 })
 
 router.get('/attacks', async (req, res, next) => {
+  // list all attacks with it's User
   res.render('admin/attacks.njk', {
     attacks: await Attack.findAll({ include: [User] })
   });
 });
 
 router.get('/:userId/attacks', async (req, res) => {
+  // list all attacks for a user
   const user = await User.findByPk(req.params.userId, { include: [Attack] });
   res.render('admin/userAttacks.njk', { user });
 });

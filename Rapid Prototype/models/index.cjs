@@ -1,3 +1,7 @@
+/**
+ * THIS IS BOILERPLATE CODE - IGNORE AND DON'T CHANGE
+ */
+
 'use strict';
 
 const fs = require('fs');

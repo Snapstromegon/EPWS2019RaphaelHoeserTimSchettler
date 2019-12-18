@@ -1,6 +1,8 @@
 export default class Templates {
+  // have a list of all templates as function taking a user
   static templates = [this.defaultMail];
 
+  // this is an example attack
   static defaultMail({ user }) {
     return {
       fakeSender: 'asshole@ahole-comp.com',
@@ -11,10 +13,12 @@ export default class Templates {
     };
   }
 
+  // this currently picks any existing template - the templates should be sorted by some sort and then, depending on the user, filtered
   static getRandomTemplate({ user }) {
     return this.templates[Math.floor(Math.random() * this.templates.length)];
   }
 
+  // this gets a random mail for a user
   static async getMailMessage({ user }) {
     return this.getRandomTemplate({ user })({ user });
   }
