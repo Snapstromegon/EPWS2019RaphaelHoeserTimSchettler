@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+  <thead>
+    <tr>
+      <th>User Id</th>
+      <th>firstName</th>
+      <th>lastName</th>
+      <th>Mail</th>
+      <th>Score</th>
+      <th>Attacks</th>
+      <th>Generate Attack</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%for user in users %}
+  <tr>
+    <td>{{user.id}}</td>
+    <td>{{user.firstName}}</td>
+    <td>{{user.lastName}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.score}}</td>
+    <td><a href="/admin/{{user.id}}/attacks">Attacks</a></td>
+    <td><a href="/attack/ad/{{user.id}}">Show Attack</a></td>
+    </tr>
+  {%endfor%}
+  </tbody>
+  </table>
+</body>
+</html>

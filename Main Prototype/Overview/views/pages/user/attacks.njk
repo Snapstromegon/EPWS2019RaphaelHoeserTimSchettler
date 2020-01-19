@@ -1,0 +1,28 @@
+Attacken für: {{req.user.firstName}}!
+Dein Score ist {{req.user.score}}
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Attacker</th>
+      <th>Difficulty</th>
+      <th>Attacked</th>
+      <th>Expires</th>
+      <th>Responded</th>
+      <th>Response Quality</th>
+    </tr>
+  </thead>
+{%for attack in attacks %}
+  {%if attack.responded%}
+  <tr>
+    <td>{{attack.id}}</td>
+    <td>{{attack.attacker}}</td>
+    <td>{{attack.difficulty}}</td>
+    <td>{{attack.attacked}}</td>
+    <td>{{attack.expires}}</td>
+    <td>{{attack.responded}}</td>
+    <td>{{attack.responseQuality}}</td>
+    </tr>
+  {%endif%}
+{%endfor%}
+</table>

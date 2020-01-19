@@ -4,6 +4,7 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+
     {
       "type": "node",
       "request": "launch",
@@ -13,6 +14,16 @@
       ],
       "cwd": "${workspaceFolder}/Rapid Prototype",
       "program": "${workspaceFolder}/Rapid Prototype/index.js"
+    }
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Main Prototype",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "cwd": "${workspaceFolder}/Main Prototype",
+      "program": "${workspaceFolder}/Main Prototype/index.js"
     }
   ]
 }

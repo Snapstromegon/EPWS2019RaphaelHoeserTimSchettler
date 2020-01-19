@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+  <thead>
+    <tr>
+      <th>User Id</th>
+      <th>firstName</th>
+      <th>lastName</th>
+      <th>Mail</th>
+      <th>Id</th>
+      <th>Attacker</th>
+      <th>Difficulty</th>
+      <th>Attacked</th>
+      <th>Expires</th>
+      <th>Responded</th>
+      <th>Response Quality</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%for attack in attacks %}
+  <tr>
+    <td>{{attack.User.id}}</td>
+    <td>{{attack.User.firstName}}</td>
+    <td>{{attack.User.lastName}}</td>
+    <td>{{attack.User.email}}</td>
+    <td>{{attack.id}}</td>
+    <td>{{attack.attacker}}</td>
+    <td>{{attack.difficulty}}</td>
+    <td>{{attack.attacked}}</td>
+    <td>{{attack.expires}}</td>
+    <td>{{attack.responded}}</td>
+    <td>{{attack.responseQuality}}</td>
+    </tr>
+  {%endfor%}
+  </tbody>
+  </table>
+</body>
+</html>
